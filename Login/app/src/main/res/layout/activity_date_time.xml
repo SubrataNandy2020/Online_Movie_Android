@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/texture"
+    tools:context=".DateTime">
+    <TextView
+        android:id="@+id/Da"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Select Date"
+        android:background="#10F7EF"
+        android:textSize="30dp" />
+
+    <Spinner
+        android:id="@+id/sp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Da"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="190dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="99dp"
+        android:layout_centerInParent="true"></Spinner>
+
+    <TextView
+        android:id="@+id/select1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Screen"
+        android:layout_centerInParent="true"
+        android:background="#10F7EF"
+        android:textSize="35dp"/>
+
+    <Spinner
+        android:id="@+id/sp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/select1"
+        >
+    </Spinner>
+
+    <Spinner
+        android:id="@+id/sp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp2"
+        android:layout_marginTop="34dp"
+        android:layout_centerInParent="true"></Spinner>
+
+    <TextView
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp3"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:text="Show Amount"
+        android:textSize="30dp"
+        android:layout_centerInParent="true"
+        android:background="#11E2C2"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select"
+        android:layout_marginTop="20dp"
+        android:text="PAY"
+        android:textSize="30dp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
+
